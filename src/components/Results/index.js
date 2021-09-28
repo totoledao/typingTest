@@ -113,7 +113,7 @@ export default function Results ({cpm, maxWords, acc }) {
 
       <div className="results">        
         <ProgressCircle number={animatedCpm} text="CPM" maxNumber={475} />
-        <ProgressCircle number={animatedMaxWords} text="WPM"/>
+        <ProgressCircle number={animatedMaxWords} text="WPM" maxNumber={80} />
         <ProgressCircle number={animatedAcc} text="% ACC"/>
       </div>
 
