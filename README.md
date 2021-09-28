@@ -52,7 +52,14 @@
 
 <!-- ![typingTestAssets/Home.jpg) -->
 
-**A quick test to asses your typing effectiveness.**
+**A quick test to asses your typing effectiveness!** <br>
+You have 60 seconds to type as many words as possible and at the end a screen will show you your CPM (characters per minute), WPM (words per minute) and ACC (accuracy) and where your typing skill is at now.
+
+Most words are in Brazilian Portuguese but don't let that frighten you, there are no words with accents (like é or ã).
+
+The main goal of this project was:
+- publish the website using GitHub Pages instead of Next.js
+- have a go at animated components, like the numbers adding up to its current value and the interpolation of colors using RGB on the progress circle
 
 
 
@@ -98,9 +105,9 @@ To get a local copy up and running follow these simple steps.
 Start typing and the timer will start. <br>
 You will have 60 seconds to type as many words as possible.
 
-<!-- <img src="readmeAssets/typingTest.jpg" alt="Typing Test Started Countdown" width="400"> -->
+<img src="readmeAssets/typingResult.jpg" alt="Typing Test Timer Started" width="400">
 
-At the end a report will show your results and where they fall.
+At the end a short report will show your results and where they fall.
 
 <!-- CONTRIBUTING -->
 ## Contributing
