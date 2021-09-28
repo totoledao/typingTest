@@ -1,5 +1,5 @@
 [![License: MIT][license-shield]][license-url]
-![Version](https://img.shields.io/badge/version-0.1.0-6bd4a7)
+![Version](https://img.shields.io/badge/version-1.0.0-6bd4a7)
 ![Size](https://github-size-badge.herokuapp.com/totoledao/typingTest.svg)
 ![Platform](https://img.shields.io/badge/platform-Web-7F00FF)
 
