@@ -6,6 +6,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 body {
@@ -17,6 +23,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Rubik', sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -30,10 +37,9 @@ body {
 }
 
 .container .validKeys {
-  font-size: 10rem;
+  font-size: 4rem;
   font-weight: bold;
-  min-width: 600px;
-  border-bottom: solid 2px #fff;
+  overflow-x: hidden;
 }
 
 .container .validKeys .matched{
@@ -45,23 +51,41 @@ body {
   opacity: 0.5;
 }
 
-.container .completedWords{
-  width: max-content;
-  height: 100vh;
-  overflow-y: scroll;
-  position: fixed;
-  top: 0;
-  right: 0;
-  text-align: left;
-  padding: 20px 40px;
-  font-size: 1.8rem;
-  line-height: 2.5rem;
-  opacity: 0.5;
-}
-
 .container .typedKeys {
   margin-top: 20px;
   font-size: 1.3rem;
-  width: 600px;
+  width: 70vw;
   overflow: hidden;
+  border: none;
+  color: #e1e1e1;
+  opacity: 0.7;
+  border-bottom: 2px solid #fff;
+  background-color: #1e1e1e;
+  ;
+}
+
+@media only screen and (min-width: 768px) {
+  .container .typedKeys {   
+    width: 20vw;
+  }
+}
+
+input[type=text]:focus {  
+  outline:none;  
+}
+
+.container .completedWords{
+  width: max-content;
+  height: 40vh;
+  overflow-y: visible;
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  opacity: 0.5;
+}
+
+.container .results {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;  
 }
